@@ -5,7 +5,7 @@ value = 1.000
 import praw
 
 reddit = praw.Reddit(client_id='probably should hide this', client_secret='like it says secret', user_agent='BitBot: by /u/theFlyingFirstAidKit', username='theFlyingFirstAidKit', password='Im not puting my password here online')
-print(reddit.read_only)  # Output: False
+print(reddit.read_only)
 submission = reddit.submission(url='https://www.reddit.com/r/test/comments/7ij0vc/bitbot/')
 
 while(True):
