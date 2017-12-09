@@ -10,7 +10,7 @@ submission = reddit.submission(url='https://www.reddit.com/r/test/comments/7ij0v
 response = urllib.urlopen(url)    
 data = json.loads(response.read())
 value = data["bpi"]["USD"]["rate_float"]
-cbv = 10 / value 
+cbv = 100 / value 
 
 while(True):
     valueOld = value
@@ -18,6 +18,6 @@ while(True):
     data = json.loads(response.read())
     value = data["bpi"]["USD"]["rate_float"]
     if valueOld != value:
-        joke = "A boy asked his bitcoin investing dad for 10. \nDad: $" + "{0:.2f}".format(valueOld * cbv) + "? What do you need $" + "{0:.2f}".format(value * cbv) + " for?\n     (live update to bitcoin value powered by coindesk)"
+        joke = "A boy asked his bitcoin investing dad for 100. \nDad: $" + "{0:.2f}".format(valueOld * cbv) + "? What do you need $" + "{0:.2f}".format(value * cbv) + " for?\n     (live update to bitcoin value powered by coindesk)"
         submission.edit(joke)
         print joke
