@@ -4,7 +4,7 @@ valueOld = 1.000
 value = 1.000
 import praw
 
-reddit = praw.Reddit(client_id='uKvJazR2qbxsgQ', client_secret='2VW6TdjOBB9yo-jNmqhZ5aEsYco', user_agent='BitBot: by /u/theFlyingFirstAidKit', username='theFlyingFirstAidKit', password='teddylily412')
+reddit = praw.Reddit(client_id='probably should hide this', client_secret='like it says secret', user_agent='BitBot: by /u/theFlyingFirstAidKit', username='theFlyingFirstAidKit', password='Im not puting my password here online')
 print(reddit.read_only)  # Output: False
 submission = reddit.submission(url='https://www.reddit.com/r/test/comments/7ij0vc/bitbot/')
 
